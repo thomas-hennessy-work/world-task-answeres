@@ -2,3 +2,7 @@
 SELECT COUNT(ID) 
 FROM city ci JOIN country co ON ci.CountryCode = co.Code
 WHERE co.name = 'United States';
+
+2)
+SELECT NAME FROM country 
+ORDER BY LifeExpectancy LIMIT 1;
