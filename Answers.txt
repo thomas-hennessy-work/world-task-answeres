@@ -26,6 +26,10 @@ SELECT Name FROM city
 WHERE Name LIKE 'F%' LIMIT 25;
 
 7)
-SELECT COUNT (ID)
+SELECT COUNT(ID)
 FROM city ci JOIN country co ON ci.CountryCode = co.Code
 WHERE co.Name = 'China';
+
+8)
+SELECT Name FROM country
+WHERE Population IS NOT NULL ORDER BY Population ASC LIMIT 1;
