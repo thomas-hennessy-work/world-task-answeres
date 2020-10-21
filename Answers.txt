@@ -76,3 +76,8 @@ GROUP BY co.Name ORDER BY number_of_languages_spoken DESC LIMIT 10;
 SELECT co.Name, cl.Percentage AS percentage_German_speakers
 FROM country co JOIN countrylanguage cl ON co.Code = cl.CountryCode
 WHERE cl.Language = 'German' AND cl.Percentage > 50;
+
+18)
+SELECT Name, LifeExpectancy FROM country
+WHERE LifeExpectancy IS NOT NULL
+ORDER BY LifeExpectancy LIMIT 1;
