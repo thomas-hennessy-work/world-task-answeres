@@ -1,0 +1,4 @@
+1)
+SELECT COUNT(ID) 
+FROM city ci JOIN country co ON ci.CountryCode = co.Code
+WHERE co.name = 'United States';
