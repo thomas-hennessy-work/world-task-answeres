@@ -15,3 +15,8 @@ WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy DESC LIMIT 1;
 SELECT ci.Name 
 FROM city ci JOIN country co ON ci.ID = co.Capital
 WHERE co.Name = 'Spain';
+
+5)
+SELECT DISTINCT cl.Language
+FROM countrylanguage cl JOIN country co ON cl.CountryCode = co.Code
+WHERE co.Region = 'Southeast Asia';
