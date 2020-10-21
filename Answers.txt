@@ -81,3 +81,10 @@ WHERE cl.Language = 'German' AND cl.Percentage > 50;
 SELECT Name, LifeExpectancy FROM country
 WHERE LifeExpectancy IS NOT NULL
 ORDER BY LifeExpectancy LIMIT 1;
+
+19)
+SELECT GovernmentForm FROM country
+GROUP BY GovernmentForm ORDER BY COUNT(GovernmentForm) DESC LIMIT 3;
+
+20)
+SELECT COUNT(IndepYear) FROM country;
