@@ -5,4 +5,6 @@ WHERE co.name = 'United States';
 
 2)
 SELECT NAME FROM country 
-ORDER BY LifeExpectancy LIMIT 1;
+WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy DESC LIMIT 1;
+
+3)
