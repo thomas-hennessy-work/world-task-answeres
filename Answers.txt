@@ -20,3 +20,7 @@ WHERE co.Name = 'Spain';
 SELECT DISTINCT cl.Language
 FROM countrylanguage cl JOIN country co ON cl.CountryCode = co.Code
 WHERE co.Region = 'Southeast Asia';
+
+6)
+SELECT Name FROM city
+WHERE Name LIKE 'F%' LIMIT 25;
