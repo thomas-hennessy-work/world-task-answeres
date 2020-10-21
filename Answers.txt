@@ -54,3 +54,8 @@ HeadOfState = 'Elisabeth II';
 
 SELECT Name, Code FROM country
 WHERE HeadOfState = 'Elizabeth II';
+
+13)
+SELECT Name, SurfaceArea/Population AS population_to_area_ratio FROM country
+WHERE Population > 0 AND SurfaceArea > 0 
+ORDER BY population_to_area_ratio ASC LIMIT 10;
