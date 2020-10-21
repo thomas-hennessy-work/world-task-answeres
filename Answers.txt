@@ -36,3 +36,7 @@ WHERE Population IS NOT NULL ORDER BY Population ASC LIMIT 1;
 
 9)
 SELECT COUNT(Code) FROM country;
+
+10)
+SELECT Name FROM country
+ORDER BY SurfaceArea DESC LIMIT 10;
