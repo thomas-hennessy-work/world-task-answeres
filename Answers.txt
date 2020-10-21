@@ -24,3 +24,8 @@ WHERE co.Region = 'Southeast Asia';
 6)
 SELECT Name FROM city
 WHERE Name LIKE 'F%' LIMIT 25;
+
+7)
+SELECT COUNT (ID)
+FROM city ci JOIN country co ON ci.CountryCode = co.Code
+WHERE co.Name = 'China';
