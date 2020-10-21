@@ -3,8 +3,6 @@ SELECT COUNT(ID)
 FROM city ci JOIN country co ON ci.CountryCode = co.Code
 WHERE co.name = 'United States';
 
-2)
+3)
 SELECT NAME FROM country 
 WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy DESC LIMIT 1;
-
-3)
