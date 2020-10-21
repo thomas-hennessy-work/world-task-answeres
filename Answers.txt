@@ -71,3 +71,8 @@ ORDER BY GNP DESC LIMIT 10;
 SELECT co.Name, COUNT(cl.language) AS number_of_languages_spoken
 FROM country co JOIN countrylanguage cl ON cl.CountryCode = co.Code
 GROUP BY co.Name ORDER BY number_of_languages_spoken DESC LIMIT 10;
+
+17)
+SELECT co.Name, cl.Percentage AS percentage_German_speakers
+FROM country co JOIN countrylanguage cl ON co.Code = cl.CountryCode
+WHERE cl.Language = 'German' AND cl.Percentage > 50;
