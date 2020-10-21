@@ -59,3 +59,10 @@ WHERE HeadOfState = 'Elizabeth II';
 SELECT Name, Population/SurfaceArea AS population_to_area_ratio FROM country
 WHERE Population > 0 AND SurfaceArea > 0 
 ORDER BY population_to_area_ratio ASC LIMIT 10;
+
+14)
+SELECT DISTINCT Language FROM countrylanguage;
+
+15)
+SELECT Name, GNP from country
+ORDER BY GNP DESC LIMIT 10;
