@@ -2,3 +2,10 @@
 SELECT title, release_date FROM movies
 WHERE YEAR(release_date) > 1983 AND YEAR(release_date) < 1993
 ORDER BY release_date ASC;
+
+2)
+SELECT mo.title, ra.rating
+FROM movies mo JOIN ratings ra ON mo.id = ra.id
+WHERE ra.rating=(
+	SELECT MIN(rating) FROM ratings
+);
