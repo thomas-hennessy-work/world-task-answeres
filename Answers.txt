@@ -40,3 +40,8 @@ SELECT COUNT(Code) FROM country;
 10)
 SELECT Name FROM country
 ORDER BY SurfaceArea DESC LIMIT 10;
+
+11)
+SELECT ci.Name 
+FROM city ci JOIN country co ON ci.CountryCode = co.Code
+WHERE co.Name = 'Japan' ORDER BY ci.Population DESC LIMIT 5;
