@@ -10,3 +10,8 @@ WHERE Name = 'Argentina';
 3)
 SELECT NAME FROM country 
 WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy DESC LIMIT 1;
+
+4)
+SELECT ci.Name 
+FROM city ci JOIN country co ON ci.ID = co.Capital
+WHERE co.Name = 'Spain';
